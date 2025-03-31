@@ -65,19 +65,19 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-16 md:py-24 bg-gradient-to-b from-white to-indigo-50">
+    <section id="projects" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 inline-block text-transparent bg-clip-text">My Projects</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800">My Projects</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Here are some of my notable projects that showcase my skills and expertise in web development.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col border-transparent bg-white rounded-xl hover:translate-y-[-5px]" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="h-48 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 flex items-center justify-center">
+            <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col border-slate-200 bg-white rounded-xl hover:translate-y-[-5px]" style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="h-48 bg-slate-200 flex items-center justify-center">
                 {project.imageUrl ? (
                   <img 
                     src={project.imageUrl} 
@@ -85,20 +85,20 @@ const ProjectsSection = () => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <span className="text-white font-medium">{project.title} Screenshot</span>
+                  <span className="text-slate-500 font-medium">{project.title} Screenshot</span>
                 )}
               </div>
               
               <CardHeader className="pb-0">
-                <CardTitle className="text-indigo-800">{project.title}</CardTitle>
+                <CardTitle className="text-blue-700">{project.title}</CardTitle>
               </CardHeader>
               
               <CardContent className="flex-grow pt-4">
-                <CardDescription className="mb-4 text-gray-600">{project.description}</CardDescription>
+                <CardDescription className="mb-4 text-slate-600">{project.description}</CardDescription>
                 
-                <ul className="list-disc list-inside space-y-1 text-sm text-gray-600 my-4 ml-2">
+                <ul className="list-disc list-inside space-y-1 text-sm text-slate-600 my-4 ml-2">
                   {project.features.map((feature, index) => (
-                    <li key={index} className="text-gray-700">{feature}</li>
+                    <li key={index} className="text-slate-700">{feature}</li>
                   ))}
                 </ul>
                 
@@ -106,7 +106,7 @@ const ProjectsSection = () => {
                   {project.technologies.map((tech, index) => (
                     <span 
                       key={index} 
-                      className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-xs px-3 py-1 rounded-full"
+                      className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
@@ -116,7 +116,7 @@ const ProjectsSection = () => {
               
               <CardFooter className="flex gap-2 pt-2">
                 {project.liveUrl && (
-                  <Button variant="outline" size="sm" asChild className="border-indigo-500 text-indigo-700 hover:bg-indigo-500 hover:text-white transition-colors">
+                  <Button variant="outline" size="sm" asChild className="border-blue-500 text-blue-700 hover:bg-blue-500 hover:text-white transition-colors">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                       <ExternalLink size={14} />
                       Live Demo
@@ -124,7 +124,7 @@ const ProjectsSection = () => {
                   </Button>
                 )}
                 {project.repoUrl && (
-                  <Button variant="outline" size="sm" asChild className="border-purple-500 text-purple-700 hover:bg-purple-500 hover:text-white transition-colors">
+                  <Button variant="outline" size="sm" asChild className="border-slate-500 text-slate-700 hover:bg-slate-500 hover:text-white transition-colors">
                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                       <Github size={14} />
                       View Code
