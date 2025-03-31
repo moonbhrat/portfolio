@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin } from "lucide-react";
+import MyImage from '../assets/profile.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -33,13 +34,13 @@ const HeroSection = () => {
               "To leverage my skills in MERN stack and Java development to build efficient applications while continuously enhancing my expertise in web development."
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a href="https://github.com/moonbirds" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors">
+              <a href="https://github.com/moonbhrat" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors">
                 <Github size={20} />
-                <span>github.com/moonbirds</span>
+                <span>Github</span>
               </a>
-              <a href="https://www.linkedin.com/in/shashank-srivastava-335261321/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors">
+              <a href="https://www.linkedin.com/in/shashank-srivastava-3352b1321/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-700 hover:text-blue-600 transition-colors">
                 <Linkedin size={20} />
-                <span>linkedin.com/in/shashank-srivastava</span>
+                <span>Linkedin</span>
               </a>
             </div>
             <div className="flex space-x-4 pt-4">
@@ -55,7 +56,7 @@ const HeroSection = () => {
           <div className="flex-1 flex justify-center">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-slate-200 flex items-center justify-center p-1 shadow-xl transform hover:rotate-3 transition-transform duration-300">
               <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-                <span className="text-xl text-slate-500">Your Image Here</span>
+                <img src={MyImage} alt='Profile Image' height={"100%"} width={"100%"}/>
               </div>
             </div>
           </div>

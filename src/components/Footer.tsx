@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Portfolio</h3>
             <p className="text-gray-400">
-              A showcase of my projects and skills in web development.
+              A showcase of my projects and skills in web development and programming.
             </p>
           </div>
           
@@ -50,31 +50,31 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Connect</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://github.com/moonbhrat" className="text-gray-400 hover:text-white transition-colors">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/shashank-srivastava-3352b1321/" className="text-gray-400 hover:text-white transition-colors">
                   LinkedIn
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
                   Twitter
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors">
+                {/* <a href="shashankk.sri.blp@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                   Email Me
-                </a>
+                </a> */}
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} Shashank. All rights reserved.</p>
         </div>
       </div>
     </footer>

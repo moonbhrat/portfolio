@@ -57,7 +57,7 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="flex w-[100%] justify-center">
           <Card className="overflow-hidden shadow-lg border-0 hover:shadow-xl transition-all duration-300 hover:translate-y-[-5px]">
             <div className="h-2 w-full bg-blue-600"></div>
             <CardContent className="p-8">
@@ -70,7 +70,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-slate-900">Email</h4>
-                    <p className="text-slate-600">your.email@example.com</p>
+                    <p className="text-slate-600">shashankk.sri.blp@gmail.com</p>
                   </div>
                 </div>
                 
@@ -80,7 +80,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-slate-900">Phone</h4>
-                    <p className="text-slate-600">+1 (123) 456-7890</p>
+                    <p className="text-slate-600">+91 6306972291</p>
                   </div>
                 </div>
                 
@@ -90,29 +90,29 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-slate-900">Location</h4>
-                    <p className="text-slate-600">City, Country</p>
+                    <p className="text-slate-600">Lucknow, India</p>
                   </div>
                 </div>
                 
                 <div>
                   <h4 className="font-medium text-slate-900 mb-4">Social Media</h4>
                   <div className="flex space-x-4">
-                    <a href="#" className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 hover:bg-blue-200 transition-colors" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/shashank-srivastava-3352b1321/" className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 hover:bg-blue-200 transition-colors" aria-label="LinkedIn">
                       <Linkedin className="text-blue-600 w-5 h-5" />
                     </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 hover:bg-slate-200 transition-colors" aria-label="GitHub">
+                    <a href="https://github.com/moonbhrat" className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 hover:bg-slate-200 transition-colors" aria-label="GitHub">
                       <Github className="text-slate-600 w-5 h-5" />
                     </a>
-                    <a href="#" className="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0 hover:bg-cyan-200 transition-colors" aria-label="Twitter">
+                    {/* <a href="#" className="w-10 h-10 rounded-full bg-cyan-100 flex items-center justify-center flex-shrink-0 hover:bg-cyan-200 transition-colors" aria-label="Twitter">
                       <Twitter className="text-cyan-600 w-5 h-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="overflow-hidden shadow-lg border-0 hover:shadow-xl transition-all duration-300 hover:translate-y-[-5px]">
+          {/* <Card className="overflow-hidden shadow-lg border-0 hover:shadow-xl transition-all duration-300 hover:translate-y-[-5px]">
             <div className="h-2 w-full bg-green-600"></div>
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-6 text-green-700">Send Message</h3>
@@ -175,7 +175,7 @@ const ContactSection = () => {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>

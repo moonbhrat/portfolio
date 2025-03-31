@@ -3,6 +3,8 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy, Award, GraduationCap, Download, Link2 } from "lucide-react";
+import MyImage from '../assets/side-profile.jpg';
+import MyResume from '../assets/resume.pdf';
 
 const AboutSection = () => {
   return (
@@ -63,7 +65,7 @@ const AboutSection = () => {
                     <Award className="text-green-600 shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-slate-800">Cloud Computing (NPTEL Certified)</h4>
-                      <a href="#" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
+                      <a href="https://drive.google.com/file/d/1BafCkjDfQLGJLGdn5tO2Sw4_aNMb5-iN/view?usp=drive_link" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
                         <Link2 size={16} /> Certificate Link
                       </a>
                     </div>
@@ -90,7 +92,7 @@ const AboutSection = () => {
                     <Trophy className="text-amber-600 shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-slate-800">Scored 95.06 percentile in Naakri Campus Young Turks Skill Contest</h4>
-                      <a href="#" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
+                      <a href="https://drive.google.com/file/d/12pK5QOL2KfcNC-xsGgvj5L-AVAkQTejd/view?usp=drive_link" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
                         <Link2 size={16} /> Certificate Link
                       </a>
                     </div>
@@ -101,7 +103,7 @@ const AboutSection = () => {
                     <Trophy className="text-green-600 shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-slate-800">Secured 3rd position in IEEE Quiz competition during IEEE Founder's Week (Oct 6)</h4>
-                      <a href="#" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
+                      <a href="https://drive.google.com/file/d/1QBzv7aFo4mtCp3kaFxsMTHXVZqOHcnJI/view?usp=drive_link" className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 transition-colors">
                         <Link2 size={16} /> Certificate Link
                       </a>
                     </div>
@@ -111,17 +113,19 @@ const AboutSection = () => {
             </div>
             
             <div className="mt-8">
-              <Button className="bg-blue-600 hover:bg-blue-700 hover:shadow-lg transition-all duration-300 flex items-center gap-2">
-                <Download size={16} />
-                Download CV
-              </Button>
+              <a href="https://drive.google.com/file/d/1v3wNZOCxn4BpktuXn3OvwJz7WrzDtCaj/view?usp=sharing">
+                <Button className="bg-blue-600 hover:bg-blue-700 hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+                  <Download size={16} />
+                  Download CV
+                </Button>
+              </a>
             </div>
           </div>
           
           <div className="flex-1 order-1 md:order-2 flex justify-center items-center">
             <div className="rounded-2xl overflow-hidden bg-slate-200 p-1 shadow-xl transform hover:rotate-3 transition-all duration-300">
               <div className="aspect-square max-w-md mx-auto bg-white rounded-xl flex items-center justify-center p-1">
-                <span className="text-slate-500">Your Photo</span>
+                <img src={MyImage} alt='Profile Image' height={"100%"} width={"100%"} className='rounded-lg'/>
               </div>
             </div>
           </div>

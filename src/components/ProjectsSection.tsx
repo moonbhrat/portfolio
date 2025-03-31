@@ -29,7 +29,7 @@ const projects: Project[] = [
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "HTML/CSS"],
     imageUrl: "",
     liveUrl: "#",
-    repoUrl: "https://github.com/moonbirds",
+    repoUrl: "https://github.com/moonbhrat",
   },
   {
     id: 2,
@@ -45,8 +45,9 @@ const projects: Project[] = [
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Authentication"],
     imageUrl: "",
     liveUrl: "#",
-    repoUrl: "https://github.com/moonbirds",
+    repoUrl: "https://github.com/moonbhrat",
   },
+  
   {
     id: 3,
     title: "Simon Says Game",
@@ -59,7 +60,7 @@ const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     imageUrl: "",
     liveUrl: "#",
-    repoUrl: "https://github.com/moonbirds",
+    repoUrl: "https://github.com/moonbhrat",
   },
 ];
 
@@ -85,7 +86,7 @@ const ProjectsSection = () => {
                     className="w-full h-full object-cover"
                   />
                 ) : (
-                  <span className="text-slate-500 font-medium">{project.title} Screenshot</span>
+                  <span className="text-slate-500 font-medium">{project.title} </span>
                 )}
               </div>
               
@@ -115,14 +116,14 @@ const ProjectsSection = () => {
               </CardContent>
               
               <CardFooter className="flex gap-2 pt-2">
-                {project.liveUrl && (
+                {/* {project.liveUrl && (
                   <Button variant="outline" size="sm" asChild className="border-blue-500 text-blue-700 hover:bg-blue-500 hover:text-white transition-colors">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                       <ExternalLink size={14} />
                       Live Demo
                     </a>
                   </Button>
-                )}
+                )} */}
                 {project.repoUrl && (
                   <Button variant="outline" size="sm" asChild className="border-slate-500 text-slate-700 hover:bg-slate-500 hover:text-white transition-colors">
                     <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
