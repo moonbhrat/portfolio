@@ -7,28 +7,39 @@ import { Card, CardContent } from "@/components/ui/card";
 interface Skill {
   name: string;
   level: number;
-  category: 'frontend' | 'backend' | 'design' | 'other';
+  category: 'languages' | 'technical' | 'platform' | 'soft';
 }
 
 const skills: Skill[] = [
-  { name: 'HTML/CSS', level: 90, category: 'frontend' },
-  { name: 'JavaScript', level: 85, category: 'frontend' },
-  { name: 'React', level: 80, category: 'frontend' },
-  { name: 'TypeScript', level: 75, category: 'frontend' },
-  { name: 'Node.js', level: 70, category: 'backend' },
-  { name: 'Express', level: 65, category: 'backend' },
-  { name: 'MongoDB', level: 60, category: 'backend' },
-  { name: 'UI/UX Design', level: 75, category: 'design' },
-  { name: 'Figma', level: 70, category: 'design' },
-  { name: 'Git/GitHub', level: 80, category: 'other' },
+  // Languages
+  { name: 'Java', level: 85, category: 'languages' },
+  { name: 'JavaScript', level: 85, category: 'languages' },
+  
+  // Technical Skills
+  { name: 'HTML5', level: 90, category: 'technical' },
+  { name: 'CSS', level: 85, category: 'technical' },
+  { name: 'MongoDB', level: 80, category: 'technical' },
+  { name: 'React.js', level: 85, category: 'technical' },
+  { name: 'Express.js', level: 80, category: 'technical' },
+  { name: 'Node.js', level: 80, category: 'technical' },
+  { name: 'DBMS', level: 75, category: 'technical' },
+  { name: 'Networking', level: 70, category: 'technical' },
+  
+  // Platforms
+  { name: 'Visual Studio Code', level: 90, category: 'platform' },
+  { name: 'IntelliJ IDEA', level: 85, category: 'platform' },
+  
+  // Soft Skills
+  { name: 'Problem Solving', level: 90, category: 'soft' },
+  { name: 'Communication', level: 85, category: 'soft' },
 ];
 
 const SkillsSection = () => {
   const categories = [
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'backend', label: 'Backend' },
-    { id: 'design', label: 'Design' },
-    { id: 'other', label: 'Other' },
+    { id: 'languages', label: 'Programming Languages' },
+    { id: 'technical', label: 'Technical Skills' },
+    { id: 'platform', label: 'Development Platforms' },
+    { id: 'soft', label: 'Soft Skills' },
   ];
 
   return (
@@ -37,7 +48,7 @@ const SkillsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            I've worked with a variety of technologies and tools in web development. Here's a snapshot of my technical skills.
+            I've worked with various technologies and tools in web development. Here's a snapshot of my technical expertise.
           </p>
         </div>
         
@@ -67,7 +78,7 @@ const SkillsSection = () => {
         <div className="mt-16">
           <h3 className="text-xl font-semibold mb-6 text-center">Tools & Technologies</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {['React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Express', 'Git', 'Figma', 'VS Code', 'npm', 'Webpack'].map((tool) => (
+            {['Java', 'JavaScript', 'HTML5', 'CSS', 'MongoDB', 'React.js', 'Express.js', 'Node.js', 'DBMS', 'VS Code', 'IntelliJ IDEA'].map((tool) => (
               <Badge key={tool} variant="outline" className="text-sm py-1 px-3 bg-white">
                 {tool}
               </Badge>
